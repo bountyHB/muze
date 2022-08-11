@@ -36,12 +36,8 @@ public class WelcomeServlet extends HttpServlet {
     		
     		request.setAttribute("member", member);
 	    	
-	    	// 1st row
 	    	Welcome welcomeRow = new WelcomeService().getMileage(memNo);
 	    	Welcome welcomeRow2 = new WelcomeService().getReview(memNo);
-	    	
-//	    	System.out.println(welcomeRow);
-//	    	System.out.println(welcomeRow2);
 	    	
 	    	request.setAttribute("welcomeRow", welcomeRow);
 	    	request.setAttribute("welcomeRow2", welcomeRow2);

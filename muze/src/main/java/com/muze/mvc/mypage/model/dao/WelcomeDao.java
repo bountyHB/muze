@@ -69,8 +69,7 @@ public class WelcomeDao {
 		
 		String query = "SELECT M.MEMBER_NO, M.MEMBER_NAME, COUNT(*) AS CNT "
 						+ "FROM MEMBER M "
-						+ "JOIN MILEAGE MI ON (M.MEMBER_NO = MI.MEMBER_NO) "
-						+ "JOIN BOARD B ON (MI.MEMBER_NO = B.BRD_WRITER_NO) "
+						+ "JOIN BOARD B ON (M.MEMBER_NO = B.BRD_WRITER_NO) "
 						+ "WHERE M.MEMBER_NO = ? AND BRD_TYPE = 'REVIEW' AND BRD_STATUS = 'Y' "
 						+ "GROUP BY M.MEMBER_NO, M.MEMBER_NAME " ;
 		

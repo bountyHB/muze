@@ -43,10 +43,8 @@ public class ArtistStatusServlet extends HttpServlet {
     		int orderAmount = 0;
     		int proNo = 0;
     		
-    		// 오더 넘버로 오더 디테일 가죠오기
     		for (int i = 0; i < orderNo.length; i++) {
     			orderDetail = new MyOrderService().getOrderDetail(orderNo[i]);
-    			// 구매자 넘버와 마일리지 값 가져오기 
     			buyMemMil = orderDetail.getMileagePoint();
     			buyMemNo =  orderDetail.getMemNo();
     			orderAmount = orderDetail.getOrderAmount();

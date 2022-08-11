@@ -24,7 +24,6 @@ public class ArtistServlet extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	// 로그인 체크 & 본인 게시글 여부 확인 
 		HttpSession session = request.getSession(false);
 		Member loginMember = (session == null) ? null : (Member) session.getAttribute("loginMember");
 		
@@ -32,7 +31,6 @@ public class ArtistServlet extends HttpServlet {
 			Artist loginartist = new MemberService().getArtistByNo(loginMember.getMemberNo());
 			Artist artist = new Artist();
 			artist.setArtistNo(loginMember.getMemberNo());
-//			artist.setBusName(loginartist.getBusName());
 			artist.setBusName(loginMember.getMemberName());
 			request.setAttribute("artist", artist);
 			
