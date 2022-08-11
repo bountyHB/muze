@@ -40,7 +40,7 @@
 	         <div class="card-body">
 	          <h5 class="card-title">나의 후기</h5>
 	           <p class="card-text">
-	             ${ welcomeRow.boardCount } 개
+	             ${ welcomeRow2.boardCount } 개
 	           </p>
 	          </a>
 	        </div>
