@@ -94,7 +94,8 @@ public class MyBoardDao {
 						+ " BRD_TYPE,"
 						+ " BRD_STATUS,"
 						+ " BRD_ORIGINALFILENAME,"
-						+ " BRD_RENAMEDFILENAME"
+						+ " BRD_RENAMEDFILENAME,"
+						+ " BRD_IMG"
 						+ " FROM ("
 						+ 	" SELECT ROWNUM AS RNUM,"
 						+ 		" BRD_NO,"
@@ -111,7 +112,8 @@ public class MyBoardDao {
 						+ 		" BRD_TYPE,"
 						+ 		" BRD_STATUS,"
 						+ 		" BRD_ORIGINALFILENAME,"
-						+ 		" BRD_RENAMEDFILENAME"
+						+ 		" BRD_RENAMEDFILENAME,"
+						+ 		" BRD_IMG"
 						+ 			" FROM ("
 						+ 				" SELECT"
 						+ 					   " BRD_NO,"
@@ -128,7 +130,8 @@ public class MyBoardDao {
 						+ 					   " BRD_TYPE,"
 						+ 					   " BRD_STATUS,"
 						+ 					   " BRD_ORIGINALFILENAME,"
-						+ 					   " BRD_RENAMEDFILENAME"
+						+ 					   " BRD_RENAMEDFILENAME,"
+						+ 					   " BRD_IMG"
 						+ 				" FROM BOARD"
 						+ 				" JOIN MEMBER ON(BOARD.BRD_WRITER_NO = MEMBER.MEMBER_NO)"
 						+ 				typequery[1]
@@ -168,6 +171,7 @@ public class MyBoardDao {
 				board.setBrdStatus(rs.getString("BRD_STATUS"));
 				board.setBrdOriginalFileName(rs.getString("BRD_ORIGINALFILENAME"));
 				board.setBrdRenamedFileName(rs.getString("BRD_RENAMEDFILENAME"));
+				board.setBrdImg(rs.getString("BRD_IMG"));
 				list.add(board);
 			}
 		} catch (SQLException e) {

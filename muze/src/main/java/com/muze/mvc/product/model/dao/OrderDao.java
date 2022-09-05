@@ -21,7 +21,7 @@ public class OrderDao {
 		
 		for(int i = 0; i < orderList.size(); i++) {
 			if(i == 0) {
-				String query = "INSERT INTO ORDERS VALUES(SEQ_ORDER_NO.NEXTVAL,?,SYSDATE,?,?,?,?,?,?)";
+				String query = "INSERT INTO ORDERS VALUES(SEQ_ORDER.NEXTVAL,?,SYSDATE,?,?,?,?,?,?)";
 				
 				try {
 					pstm = connection.prepareStatement(query, new String[] {"ORDER_NO"} );
@@ -48,7 +48,7 @@ public class OrderDao {
 				}
 				
 			} else {
-				String query = "INSERT INTO ORDERS VALUES(SEQ_ORDER_NO.CURRVAL,?,SYSDATE,?,?,?,?,?,?)";
+				String query = "INSERT INTO ORDERS VALUES(SEQ_ORDER.NEXTVAL,?,SYSDATE,?,?,?,?,?,?)";
 				
 				try {
 					pstm = connection.prepareStatement(query);
@@ -86,8 +86,8 @@ public class OrderDao {
 				
 				pstm.setInt(1, orderStatusList.get(i).getOrderNo());
 				pstm.setString(2, orderStatusList.get(i).getOrderStatus());
-				pstm.setInt(3, orderStatusList.get(i).getMemberNo());
-				pstm.setInt(4, orderStatusList.get(i).getProNo());
+				pstm.setInt(3, orderStatusList.get(i).getProNo());
+				pstm.setInt(4, orderStatusList.get(i).getMemberNo());
 				
 				result = pstm.executeUpdate();			
 				

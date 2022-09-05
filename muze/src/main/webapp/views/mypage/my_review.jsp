@@ -44,8 +44,8 @@
 					
 					<div class="col-lg-3 col-md-6" onclick="location.href='${ path }/board/view?no=${ board.brdNo }&type=${ type }'">
 			            <div class="card" style="width: 13rem; height: 20rem;">
-			                <img style="background-color: black;" width="100%" height="70%">
-			                <div class="card-body">
+							<img src="${path}/resources/upload/board/temporary/${ board.brdImg }" onerror="this.src='${path}/resources/images/common/No-Image.png'" style="width: 100%; height:254px; object-fit:contain;">			                
+						<div class="card-body">
 			                    <h5 class="card-title">${ board.brdTitle }</h5>
 			                    <p class="card-text">${board.brdProName }</p>
 			                    <p class="card-text">${board.brdWriterId }</p>
