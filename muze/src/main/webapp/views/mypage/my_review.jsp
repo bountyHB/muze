@@ -29,7 +29,7 @@
             <div class="row">
               <div class="col-sm-12" style="margin-top: 40px;">
                 <form style="margin-bottom: 3px;">
-                  <span id="mySpan01">작품 후기</span> 
+                  <span id="mySpan01">작품 리뷰</span> 
                   <hr style="margin-bottom: 10px;">
                 </form>
               </div>

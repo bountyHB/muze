@@ -120,7 +120,7 @@
     	
 		$('#mycbtn').click(function() { 
 			if(confirm('주문을 취소하시겠습니까..?')) {
-				location.replace('${path}/mypage/cancel');
+				location.replace("${ path }/mypage/cancel?no=${ orderByDate.orderNo }");
 			}
 		});
 		

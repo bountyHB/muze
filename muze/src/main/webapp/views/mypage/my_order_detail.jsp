@@ -170,7 +170,7 @@
 		$(document).ready(() => {
 			$("#mycbtn").on("click", () => {
 				if(confirm("확인을 누르면 주문이 취소됩니다.")) {
-					location.replace("${ path }/mypage/cancel");
+					location.replace("${ path }/mypage/cancel?no=${ orderDetail.orderNo }");
 				}
 			});
 		});
