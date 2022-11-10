@@ -44,5 +44,3 @@ https://youtu.be/ZgzRO6T5F0w
 ![muze 037](https://user-images.githubusercontent.com/101177300/201003489-a28c9ff0-33cc-4a4d-b6d0-c635306df86a.png)
 ![muze 038](https://user-images.githubusercontent.com/101177300/201003491-3c6b7ae4-544a-496b-8b6b-4627aaa6bfaa.png)
 ![muze 039](https://user-images.githubusercontent.com/101177300/201003493-b4f4ed70-b34e-4918-8da8-252df1b62580.png)
-![muze 040](https://user-images.githubusercontent.com/101177300/201003497-d3cd5772-83e8-4fb0-b972-fa107e0ac2d9.png)
-![muze 041](https://user-images.githubusercontent.com/101177300/201003499-5ed86963-cb0b-42e4-824f-f1b4f113c6ba.png) 
