@@ -1,5 +1,8 @@
 # Semi Project _ MUZE
 
+## notion
+https://cut-potassium-36a.notion.site/dbd193f789644b4186626a18d1b067a7
+
 ## 시연영상
 https://youtu.be/ZgzRO6T5F0w
 
